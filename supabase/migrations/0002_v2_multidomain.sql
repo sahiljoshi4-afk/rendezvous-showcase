@@ -13,7 +13,7 @@ alter table events add column if not exists category text;
 --   culture    = restaurants, openings, exhibitions, museums
 
 alter table events add column if not exists appeal_score integer;
--- 0-10, universal "how much would Sahil want this". Replaces networking_score
+-- 0-10, universal "how much would you want this". Replaces networking_score
 -- as the cross-domain fallback sort. networking_score stays, but only means
 -- something for category='networking'.
 
